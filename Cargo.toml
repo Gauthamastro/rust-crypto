@@ -6,7 +6,7 @@ license = "MIT/Apache-2.0"
 homepage = "https://github.com/DaGenix/rust-crypto/"
 repository = "https://github.com/DaGenix/rust-crypto/"
 description = "A (mostly) pure-Rust implementation of various common cryptographic algorithms."
-keywords = [ "Crypto", "MD5", "Sha1", "Sha2", "AES" ]
+keywords = ["Crypto", "MD5", "Sha1", "Sha2", "AES"]
 readme = "README.md"
 build = "build.rs"
 
@@ -17,10 +17,11 @@ name = "crypto"
 with-bench = []
 
 [build-dependencies]
-gcc = "^0.3"
+cc = "1.0.70"
 
 [dependencies]
-libc = "^0.2"
+libc = "0.2.101"
 time = "^0.1"
 rand = "^0.3"
-rustc-serialize = "^0.3"
+base64 = "0.13.0"
+hex = "0.4.3"
